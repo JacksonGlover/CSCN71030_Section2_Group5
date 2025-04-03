@@ -1,0 +1,20 @@
+﻿  Player.c
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\Player.c(57,34): warning C4013: 'get_players_room' undefined; assuming extern returning int
+  cache.c
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\cache.c(222,16): warning C4033: 'add_to_item_cache' must return a value
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\cache.c(227,9): warning C4033: 'add_to_item_cache' must return a value
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\cache.c(644,9): warning C4129: 'R': unrecognized character escape sequence
+  io.c
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\io.c(34,29): warning C4047: 'function': 'int' differs in levels of indirection from 'void *'
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\io.c(34,29): warning C4024: 'memset': different types for formal and actual parameter 2
+  item.c
+  main.c
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\main.c(10,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  room.c
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\room.c(97,9): warning C4033: 'generate_empty_room' must return a value
+  Generating Code...
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\room.c(106,1): warning C4715: 'generate_empty_room': not all control paths return a value
+D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\cache.c(234,1): warning C4715: 'add_to_item_cache': not all control paths return a value
+  text-adventure-game.vcxproj -> D:\Programming\PROG72370\CSCN71030_Section2_Group5\text-adventure-game\x64\Debug\text-adventure-game.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

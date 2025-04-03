@@ -1,0 +1,83 @@
+\doxysection{C\+:/\+Programming/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/\+Player.c File Reference}
+\hypertarget{_player_8c}{}\label{_player_8c}\index{C:/Programming/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.c@{C:/Programming/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.c}}
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+Include dependency graph for Player.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{_player_8c_aad8e6f85ac3a1cd89f648a250d37e2b8}{create\+\_\+player}} (void)
+\item 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} \mbox{\hyperlink{_player_8c_afe4026db2b4965a931793326f332bcee}{create\+\_\+player\+\_\+inventory}} ()
+\item 
+void \mbox{\hyperlink{_player_8c_a5fc72c005eb2591ac399b9ce2f342b6a}{use\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{_player_8c_ae539d910a698026f777cae239d768389}{pickup\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{_player_8c_a318087dcb4f116c6c2ffc493e81aeead}{add\+\_\+item\+\_\+to\+\_\+inventory}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+void \mbox{\hyperlink{_player_8c_a933032264b3f603b50335cf313f44c50}{set\+\_\+players\+\_\+room}} (unsigned char room\+ID, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{_player_8c_af3747ff8f95aae3ad10c7dc7cda5cd5f}{show\+\_\+inventory\+\_\+items}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\item 
+unsigned char \mbox{\hyperlink{_player_8c_af3bce5029e5a5ca20b6a559192af3f07}{get\+\_\+players\+\_\+room}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{_player_8c_a685c6d088bf81a5e937f56738e9d209f}{destroy\+\_\+player}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_player_8c_a318087dcb4f116c6c2ffc493e81aeead}\index{Player.c@{Player.c}!add\_item\_to\_inventory@{add\_item\_to\_inventory}}
+\index{add\_item\_to\_inventory@{add\_item\_to\_inventory}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{add\_item\_to\_inventory()}{add\_item\_to\_inventory()}}
+{\footnotesize\ttfamily \label{_player_8c_a318087dcb4f116c6c2ffc493e81aeead} 
+void add\+\_\+item\+\_\+to\+\_\+inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{, }\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_aad8e6f85ac3a1cd89f648a250d37e2b8}\index{Player.c@{Player.c}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \label{_player_8c_aad8e6f85ac3a1cd89f648a250d37e2b8} 
+\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} create\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_afe4026db2b4965a931793326f332bcee}\index{Player.c@{Player.c}!create\_player\_inventory@{create\_player\_inventory}}
+\index{create\_player\_inventory@{create\_player\_inventory}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{create\_player\_inventory()}{create\_player\_inventory()}}
+{\footnotesize\ttfamily \label{_player_8c_afe4026db2b4965a931793326f332bcee} 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} create\+\_\+player\+\_\+inventory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_a685c6d088bf81a5e937f56738e9d209f}\index{Player.c@{Player.c}!destroy\_player@{destroy\_player}}
+\index{destroy\_player@{destroy\_player}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_player()}{destroy\_player()}}
+{\footnotesize\ttfamily \label{_player_8c_a685c6d088bf81a5e937f56738e9d209f} 
+void destroy\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_af3bce5029e5a5ca20b6a559192af3f07}\index{Player.c@{Player.c}!get\_players\_room@{get\_players\_room}}
+\index{get\_players\_room@{get\_players\_room}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{get\_players\_room()}{get\_players\_room()}}
+{\footnotesize\ttfamily \label{_player_8c_af3bce5029e5a5ca20b6a559192af3f07} 
+unsigned char get\+\_\+players\+\_\+room (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_ae539d910a698026f777cae239d768389}\index{Player.c@{Player.c}!pickup\_item@{pickup\_item}}
+\index{pickup\_item@{pickup\_item}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{pickup\_item()}{pickup\_item()}}
+{\footnotesize\ttfamily \label{_player_8c_ae539d910a698026f777cae239d768389} 
+void pickup\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_a933032264b3f603b50335cf313f44c50}\index{Player.c@{Player.c}!set\_players\_room@{set\_players\_room}}
+\index{set\_players\_room@{set\_players\_room}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{set\_players\_room()}{set\_players\_room()}}
+{\footnotesize\ttfamily \label{_player_8c_a933032264b3f603b50335cf313f44c50} 
+void set\+\_\+players\+\_\+room (\begin{DoxyParamCaption}\item[{unsigned char}]{room\+ID}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_af3747ff8f95aae3ad10c7dc7cda5cd5f}\index{Player.c@{Player.c}!show\_inventory\_items@{show\_inventory\_items}}
+\index{show\_inventory\_items@{show\_inventory\_items}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{show\_inventory\_items()}{show\_inventory\_items()}}
+{\footnotesize\ttfamily \label{_player_8c_af3747ff8f95aae3ad10c7dc7cda5cd5f} 
+void show\+\_\+inventory\+\_\+items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8c_a5fc72c005eb2591ac399b9ce2f342b6a}\index{Player.c@{Player.c}!use\_item@{use\_item}}
+\index{use\_item@{use\_item}!Player.c@{Player.c}}
+\doxysubsubsection{\texorpdfstring{use\_item()}{use\_item()}}
+{\footnotesize\ttfamily \label{_player_8c_a5fc72c005eb2591ac399b9ce2f342b6a} 
+void use\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+

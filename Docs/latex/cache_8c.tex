@@ -1,0 +1,391 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/cache.c File Reference}
+\hypertarget{cache_8c}{}\label{cache_8c}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/cache.c@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/cache.c}}
+{\ttfamily \#include "{}cache.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{cache_8c_ab8d8876740335b1337c3375ad3cc2b8d}{find\+\_\+room\+\_\+by\+\_\+id\+\_\+in\+\_\+master\+Array}} (unsigned char id, \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} cache)
+\item 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} \mbox{\hyperlink{cache_8c_abb33ff02c6f018deb16190b4584bea64}{create\+\_\+item\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} \mbox{\hyperlink{cache_8c_adc28c9751f4f121c8c19e9f74e32886a}{create\+\_\+room\+\_\+cache}} ()
+\item 
+void \mbox{\hyperlink{cache_8c_ac3b7ce8d2a3f8ddc622c9130228aa971}{destroy\+\_\+word\+\_\+cache}} (\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} cache)
+\item 
+void \mbox{\hyperlink{cache_8c_a6bbf386a5561d7d3bc463d02ecc22e2f}{destroy\+\_\+item\+\_\+cache}} (\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} cache)
+\item 
+void \mbox{\hyperlink{cache_8c_aee911997f2109c91e4929c709e2c5be6}{destroy\+\_\+room\+\_\+cache}} (\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} cache)
+\item 
+\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} \mbox{\hyperlink{cache_8c_af9aae61daaf2f481e31c915a21066dde}{add\+\_\+to\+\_\+room\+\_\+cache}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}}, \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} cache)
+\item 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} \mbox{\hyperlink{cache_8c_a6e474ea6ebd1a870098ed1aaa61b7b89}{populate\+Item\+Cache}} (\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items)
+\item 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} \mbox{\hyperlink{cache_8c_a0285e9dd90b256adad4486e2cf39005c}{add\+\_\+to\+\_\+item\+\_\+cache}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} cache)
+\item 
+int \mbox{\hyperlink{cache_8c_a383a0f43f83a1a2d1b50429e5c3c03de}{check\+\_\+word\+\_\+cache}} (char \texorpdfstring{$\ast$}{*}input\+String, \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} cache)
+\item 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{cache_8c_ac695fffaf6afccf18b9d883142455e1c}{find\+\_\+item\+\_\+in\+\_\+string}} (char \texorpdfstring{$\ast$}{*}input, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items)
+\item 
+void \mbox{\hyperlink{cache_8c_aa69b9037fa06b5e264678215acab5d09}{act\+\_\+on\+\_\+cache}} (int act\+ID, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items, \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} rooms, \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} cache, char \texorpdfstring{$\ast$}{*}input\+String)
+\item 
+void \mbox{\hyperlink{cache_8c_a3b28e622adfc88ea0f2e5b036887de2c}{display\+\_\+\+Cache}} (\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} cache)
+\item 
+void \mbox{\hyperlink{cache_8c_a97cab9267ef1e610a903f264b97beccd}{display\+\_\+equipped\+\_\+item\+\_\+cache}} (\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items)
+\item 
+\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} \mbox{\hyperlink{cache_8c_ab5ca53aa3f6e5e94ef96daddb84db95a}{create\+\_\+word\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} \mbox{\hyperlink{cache_8c_a2fafba881aadeb8b980422eaddfc933d}{add\+\_\+word\+\_\+to\+\_\+cache}} (char \texorpdfstring{$\ast$}{*}data, unsigned int length, unsigned char id, \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} cache)
+\item 
+void \mbox{\hyperlink{cache_8c_a25c4ee5ed9e6abfaa0a5e4b0ab82c651}{move}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}}, int direction, \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}}, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items)
+\item 
+void \mbox{\hyperlink{cache_8c_a1cfac2e342b412ff702e78f311cd5694}{save\+\_\+game}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items, \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} rooms)
+\item 
+void \mbox{\hyperlink{cache_8c_a35209a5b37f6cf4982b9867d2b3d3bdf}{load\+\_\+from\+\_\+default\+\_\+file}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} items, \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} rooms)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cache_8c_aa69b9037fa06b5e264678215acab5d09}\index{cache.c@{cache.c}!act\_on\_cache@{act\_on\_cache}}
+\index{act\_on\_cache@{act\_on\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{act\_on\_cache()}{act\_on\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_aa69b9037fa06b5e264678215acab5d09} 
+void act\+\_\+on\+\_\+cache (\begin{DoxyParamCaption}\item[{int}]{act\+ID}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{, }\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{rooms}{, }\item[{\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}}}]{cache}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{input\+String}{}\end{DoxyParamCaption})}
+
+This function is a solution to all actions, it takes all of the cache data as well as the users action choice \& input to begin processing the request
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & the ID of the action we are running \\
+\hline
+\mbox{\texttt{ in}}  & {\em PPlayer} & The pointer to the printer \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pitem\+Cache} & the pointer to the cache of all items \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} & the pointer to all of the rooms \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} & a pointer to all of the action words \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & the users input string, uneditted \& filtered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+there is no error return status code 
+\end{DoxyWarning}
+\Hypertarget{cache_8c_a0285e9dd90b256adad4486e2cf39005c}\index{cache.c@{cache.c}!add\_to\_item\_cache@{add\_to\_item\_cache}}
+\index{add\_to\_item\_cache@{add\_to\_item\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{add\_to\_item\_cache()}{add\_to\_item\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a0285e9dd90b256adad4486e2cf39005c} 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} add\+\_\+to\+\_\+item\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function adds an item to the specified item cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion \& Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item to be added to the cache. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} & cache A pointer to the item cache where the item will be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitem\+Cache the new head of the item cache 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_af9aae61daaf2f481e31c915a21066dde}\index{cache.c@{cache.c}!add\_to\_room\_cache@{add\_to\_room\_cache}}
+\index{add\_to\_room\_cache@{add\_to\_room\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{add\_to\_room\_cache()}{add\_to\_room\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_af9aae61daaf2f481e31c915a21066dde} 
+\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} add\+\_\+to\+\_\+room\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{, }\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cache_8c_a2fafba881aadeb8b980422eaddfc933d}\index{cache.c@{cache.c}!add\_word\_to\_cache@{add\_word\_to\_cache}}
+\index{add\_word\_to\_cache@{add\_word\_to\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{add\_word\_to\_cache()}{add\_word\_to\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a2fafba881aadeb8b980422eaddfc933d} 
+\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} add\+\_\+word\+\_\+to\+\_\+cache (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{unsigned int}]{length}{, }\item[{unsigned char}]{id}{, }\item[{\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function is used by create\+\_\+word\+\_\+cache to properly allocate room for a linked list node \& to ensure nodes are connected properly on creation
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & The action word, "{}\+Move"{}, "{}\+Push"{}, "{}\+Use"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em unsigned} & int the length of the action word \\
+\hline
+\mbox{\texttt{ in}}  & {\em unsigned} & char the ID of the action word for use in the act\+\_\+on\+\_\+cache function \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} & the existing head node of the current cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new head of the action cache 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_a383a0f43f83a1a2d1b50429e5c3c03de}\index{cache.c@{cache.c}!check\_word\_cache@{check\_word\_cache}}
+\index{check\_word\_cache@{check\_word\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{check\_word\_cache()}{check\_word\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a383a0f43f83a1a2d1b50429e5c3c03de} 
+int check\+\_\+word\+\_\+cache (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input\+String}{, }\item[{\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function runs through all of the action words in the cache \& returns the ID of the first found action word
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & input string that will be parsed \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} & input a pointer to a word cache that will be iterated over \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the ID of the first action word found
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+returns the first found; not the "{}best"{} choice 
+
+returns -\/1 if no action words are detected 
+\end{DoxyWarning}
+\Hypertarget{cache_8c_abb33ff02c6f018deb16190b4584bea64}\index{cache.c@{cache.c}!create\_item\_cache@{create\_item\_cache}}
+\index{create\_item\_cache@{create\_item\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{create\_item\_cache()}{create\_item\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_abb33ff02c6f018deb16190b4584bea64} 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} create\+\_\+item\+\_\+cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This function initializes and returns a new item cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion \& Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em \doxylink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} & A pointer to the newly created item cache. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tail of a linked list, aka NULL 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_adc28c9751f4f121c8c19e9f74e32886a}\index{cache.c@{cache.c}!create\_room\_cache@{create\_room\_cache}}
+\index{create\_room\_cache@{create\_room\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{create\_room\_cache()}{create\_room\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_adc28c9751f4f121c8c19e9f74e32886a} 
+\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} create\+\_\+room\+\_\+cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This function initializes and returns a new room cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em \doxylink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} & A pointer to the newly created room cache. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly allocated room cache, or NULL if allocation fails. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure proper memory management to avoid memory leaks when using the cache. 
+\end{DoxyWarning}
+\Hypertarget{cache_8c_ab5ca53aa3f6e5e94ef96daddb84db95a}\index{cache.c@{cache.c}!create\_word\_cache@{create\_word\_cache}}
+\index{create\_word\_cache@{create\_word\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{create\_word\_cache()}{create\_word\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_ab5ca53aa3f6e5e94ef96daddb84db95a} 
+\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} create\+\_\+word\+\_\+cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This function is hardcoded with action word data for use by the check\+\_\+word\+\_\+cache
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em \doxylink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} & a generated linked list of all of the action words a player may want to use \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cache_8c_a6bbf386a5561d7d3bc463d02ecc22e2f}\index{cache.c@{cache.c}!destroy\_item\_cache@{destroy\_item\_cache}}
+\index{destroy\_item\_cache@{destroy\_item\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_item\_cache()}{destroy\_item\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a6bbf386a5561d7d3bc463d02ecc22e2f} 
+void destroy\+\_\+item\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function deallocates memory and destroys the given item cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} & cache A pointer to the item cache that will be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_aee911997f2109c91e4929c709e2c5be6}\index{cache.c@{cache.c}!destroy\_room\_cache@{destroy\_room\_cache}}
+\index{destroy\_room\_cache@{destroy\_room\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_room\_cache()}{destroy\_room\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_aee911997f2109c91e4929c709e2c5be6} 
+void destroy\+\_\+room\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function deallocates memory and destroys the given room cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} & cache A pointer to the room cache that will be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_ac3b7ce8d2a3f8ddc622c9130228aa971}\index{cache.c@{cache.c}!destroy\_word\_cache@{destroy\_word\_cache}}
+\index{destroy\_word\_cache@{destroy\_word\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_word\_cache()}{destroy\_word\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_ac3b7ce8d2a3f8ddc622c9130228aa971} 
+void destroy\+\_\+word\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function deallocates memory and destroys the given word cache.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}} & cache A pointer to the word cache that will be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{cache_8c_a3b28e622adfc88ea0f2e5b036887de2c}\index{cache.c@{cache.c}!display\_Cache@{display\_Cache}}
+\index{display\_Cache@{display\_Cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{display\_Cache()}{display\_Cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a3b28e622adfc88ea0f2e5b036887de2c} 
+void display\+\_\+\+Cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{Pword\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+Displays the current cache words in a 3 column table, this is used in a help function to assist the player on their choices
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em the} & word cache that should be displayed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cache_8c_a97cab9267ef1e610a903f264b97beccd}\index{cache.c@{cache.c}!display\_equipped\_item\_cache@{display\_equipped\_item\_cache}}
+\index{display\_equipped\_item\_cache@{display\_equipped\_item\_cache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{display\_equipped\_item\_cache()}{display\_equipped\_item\_cache()}}
+{\footnotesize\ttfamily \label{cache_8c_a97cab9267ef1e610a903f264b97beccd} 
+void display\+\_\+equipped\+\_\+item\+\_\+cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cache_8c_ac695fffaf6afccf18b9d883142455e1c}\index{cache.c@{cache.c}!find\_item\_in\_string@{find\_item\_in\_string}}
+\index{find\_item\_in\_string@{find\_item\_in\_string}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{find\_item\_in\_string()}{find\_item\_in\_string()}}
+{\footnotesize\ttfamily \label{cache_8c_ac695fffaf6afccf18b9d883142455e1c} 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} find\+\_\+item\+\_\+in\+\_\+string (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{}\end{DoxyParamCaption})}
+
+This function attempts to locate an item name within a string through recursion
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & input string that will be parsed \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pitem\+Cache} & input a pointer to an item cache that will be iterated over \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM} the item which was first found within the string or NULL on error 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+returns the first found, not the "{}best"{} choice 
+
+returns NULL if not found 
+\end{DoxyWarning}
+\Hypertarget{cache_8c_ab8d8876740335b1337c3375ad3cc2b8d}\index{cache.c@{cache.c}!find\_room\_by\_id\_in\_masterArray@{find\_room\_by\_id\_in\_masterArray}}
+\index{find\_room\_by\_id\_in\_masterArray@{find\_room\_by\_id\_in\_masterArray}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{find\_room\_by\_id\_in\_masterArray()}{find\_room\_by\_id\_in\_masterArray()}}
+{\footnotesize\ttfamily \label{cache_8c_ab8d8876740335b1337c3375ad3cc2b8d} 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} find\+\_\+room\+\_\+by\+\_\+id\+\_\+in\+\_\+master\+Array (\begin{DoxyParamCaption}\item[{unsigned char}]{id}{, }\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{cache}{}\end{DoxyParamCaption})}
+
+This function searches the master room array for a room with the specified ID.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em unsigned} & char id The unique identifier of the room to be found. \\
+\hline
+\mbox{\texttt{ out}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & A pointer to the room if found, otherwise NULL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Returns NULL if no room with the specified ID exists in the master array. 
+\end{DoxyWarning}
+\Hypertarget{cache_8c_a35209a5b37f6cf4982b9867d2b3d3bdf}\index{cache.c@{cache.c}!load\_from\_default\_file@{load\_from\_default\_file}}
+\index{load\_from\_default\_file@{load\_from\_default\_file}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{load\_from\_default\_file()}{load\_from\_default\_file()}}
+{\footnotesize\ttfamily \label{cache_8c_a35209a5b37f6cf4982b9867d2b3d3bdf} 
+void load\+\_\+from\+\_\+default\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{, }\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{rooms}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cache_8c_a25c4ee5ed9e6abfaa0a5e4b0ab82c651}\index{cache.c@{cache.c}!move@{move}}
+\index{move@{move}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{cache_8c_a25c4ee5ed9e6abfaa0a5e4b0ab82c651} 
+void move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{, }\item[{int}]{direction}{, }\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{}\end{DoxyParamCaption})}
+
+moves the player based on the input direction \& their current room \& depending on what items the player has
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} & a pointer to a player \\
+\hline
+\mbox{\texttt{ in}}  & {\em int} & the direction ID of the action, S = 0, N = 1, E = 2, W = 3 \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the room that the player is currently in, to allow flag checking \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pitem\+Cache} & items to check what items the player has in their inventory \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cache_8c_a6e474ea6ebd1a870098ed1aaa61b7b89}\index{cache.c@{cache.c}!populateItemCache@{populateItemCache}}
+\index{populateItemCache@{populateItemCache}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{populateItemCache()}{populateItemCache()}}
+{\footnotesize\ttfamily \label{cache_8c_a6e474ea6ebd1a870098ed1aaa61b7b89} 
+\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}} populate\+Item\+Cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cache_8c_a1cfac2e342b412ff702e78f311cd5694}\index{cache.c@{cache.c}!save\_game@{save\_game}}
+\index{save\_game@{save\_game}!cache.c@{cache.c}}
+\doxysubsubsection{\texorpdfstring{save\_game()}{save\_game()}}
+{\footnotesize\ttfamily \label{cache_8c_a1cfac2e342b412ff702e78f311cd5694} 
+void save\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{, }\item[{\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{Pitem\+CACHE}}}]{items}{, }\item[{\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}}}]{rooms}{}\end{DoxyParamCaption})}
+
+saves the game state into a binary file
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} & a pointer to the player \\
+\hline
+\mbox{\texttt{ in}}  & {\em Pitem\+Cache} & a pointer to the \doxylink{structitem_cache}{item\+Cache} \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{Proom\+Cache}} & a pointer to the \doxylink{structroom_cache}{room\+Cache} \\
+\hline
+\end{DoxyParams}

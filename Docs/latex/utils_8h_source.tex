@@ -1,0 +1,36 @@
+\doxysection{utils.\+h}
+\hypertarget{utils_8h_source}{}\label{utils_8h_source}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.h}}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MAX\_INPUT\_STRING\_SIZE\ \ \ 100}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ https://stackoverflow.com/questions/3219393/stdlib-\/and-\/colored-\/output-\/in-\/c}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_RED\ \ \ \ \ "{}\(\backslash\)x1b[31m"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_GREEN\ \ \ "{}\(\backslash\)x1b[32m"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_YELLOW\ \ "{}\(\backslash\)x1b[33m"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_BLUE\ \ \ \ "{}\(\backslash\)x1b[34m"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_MAGENTA\ "{}\(\backslash\)x1b[35m"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_CYAN\ \ \ \ "{}\(\backslash\)x1b[36m"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ ANSI\_COLOR\_RESET\ \ \ "{}\(\backslash\)x1b[0m"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <memory.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <ctype.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_acb5fe18ecde66ace3bd57daee5d1d7f9}{process\_command\_line\_inputs}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv);}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{utils_8h_a1328d8d8f6466cf7327fcf93422be241}{find\_movement\_direction}}(\textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_ad6724144c793706c5b1d3521a593a318}{to\_lower}}(\textcolor{keywordtype}{char}*,\ \textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_a38240f1034585daa0b0582ff0a90abeb}{get\_string\_from\_user}}(\textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_a191afc58fb9f5bc145a58eefac945575}{exit\_game}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ https://stackoverflow.com/questions/26620388/c-\/substrings-\/c-\/string-\/slicing}}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utils_8h_a744d126c30db3326cdb5ef63b3a60e4e}{slice}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{char}*\ result,\ \textcolor{keywordtype}{size\_t}\ start,\ \textcolor{keywordtype}{size\_t}\ end);}
+
+\end{DoxyCode}

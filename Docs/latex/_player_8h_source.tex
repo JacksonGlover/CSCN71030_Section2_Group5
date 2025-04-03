@@ -1,0 +1,23 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{item_8h}{item.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structplayer}{player}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structplayer_a7ade075f88fff1567c4db8e3fd61a696}{current\_room}};}
+\DoxyCodeLine{00013\ \}\ \mbox{\hyperlink{_player_8h_ad37a2a2bb56cca9770d38e36a079b187}{PLAYER}},\ *\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ Player\ management}}
+\DoxyCodeLine{00016\ \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}\ \mbox{\hyperlink{_player_8h_aad8e6f85ac3a1cd89f648a250d37e2b8}{create\_player}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_player_8h_ac7a0bf9ebea241cf1bee9f308c036abd}{destroy\_player}}(\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}});}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Inventory\ management}}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_player_8h_aace5e550d1ef638021b5a507be916670}{use\_item}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}},\ \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}});}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_player_8h_a229e4bb98b1c67b1975d41ad41e5e25a}{pickup\_item}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}},\ \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}});}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_player_8h_a98bed2204f79d06c16e3e63a0e74bba4}{add\_item\_to\_inventory}}(\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}},\ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_player_8h_a543920d64fa844b7481c399e0c0089be}{set\_players\_room}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char},\ \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}});}
+
+\end{DoxyCode}

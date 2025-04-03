@@ -1,0 +1,42 @@
+\doxysection{item.\+h}
+\hypertarget{item_8h_source}{}\label{item_8h_source}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/item.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/item.h}}
+\mbox{\hyperlink{item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8h}{utils.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ MAX\_NAME\_LENGTH\ 9}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ MAX\_DESC\_LENGTH\ 230}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structitem}{item}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structitem_ad50982abf9e9bbbc784f8f17fa25b1b2}{name}}[\mbox{\hyperlink{item_8h_a0c397a708cec89c74029582574516b30}{MAX\_NAME\_LENGTH}}];}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structitem_ad4d631dc3d3c63d9022f033703f2a0a6}{nameLength}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structitem_adefaba6b1db8675bf20ff694c130daf4}{description}}[\mbox{\hyperlink{item_8h_a2711b29ff61757961638bc0c721e2bc0}{MAX\_DESC\_LENGTH}}];}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structitem_a3302e66f29b4defeb17324fc03d4a642}{spawnRoomID}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structitem_a648230ae585adf952f624c3adab7ab2a}{inInventory}};}
+\DoxyCodeLine{00023\ \}\ \mbox{\hyperlink{item_8h_a34467c6dd7f8fd68976bc288e6edf866}{ITEM}},\ *\ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structitemlist}{itemlist}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}\ \mbox{\hyperlink{structitemlist_a1bfdc34c427820a73ab549f7e8e274c2}{data}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structitemlist}{itemlist}}*\ \mbox{\hyperlink{structitemlist_a4077c509965b01eb4ae7940b3ff3ad6a}{next}};}
+\DoxyCodeLine{00029\ \}\ \mbox{\hyperlink{item_8h_acbbcb44e6cfc8f24554321a05f589b35}{ITEMLIST}},\ *\ \mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ Item\ functions}}
+\DoxyCodeLine{00033\ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}\ \mbox{\hyperlink{item_8h_a00be56e220cf4ee89421120ef0ece4d0}{generate\_item}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_a53f76fb2d3811a382407cb117e695a24}{set\_item\_name}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}},\ \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_ae31b0a5cf2ce4bcfabb874c6f85e9eb9}{set\_item\_desc}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}},\ \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_a4cdba30420dce7fdd2fb04f9609ece13}{set\_spawnRoomID}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}},\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{item_8h_aab772b01721709b5ba0b1900699bc593}{get\_item\_name}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{item_8h_adf90d9cfeceba58eec28579ab69513db}{get\_item\_desc}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{item_8h_a42e808006c2da174aa1abddda940d222}{get\_spawnRoomID}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_a49ef0c6f220a502dde8f07ec962661c4}{destroy\_item}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_aeb931697aae7cceb0a92927232a81605}{destroy\_item\_list}}(\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{item_8h_a0e53fb65d50b076ac36463b3cf137810}{describe\_item}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+
+\end{DoxyCode}

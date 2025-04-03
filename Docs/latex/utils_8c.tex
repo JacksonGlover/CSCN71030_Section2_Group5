@@ -1,0 +1,117 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.c@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.c}}
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8c_acb5fe18ecde66ace3bd57daee5d1d7f9}{process\+\_\+command\+\_\+line\+\_\+inputs}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\item 
+unsigned char \mbox{\hyperlink{utils_8c_a1e5452c3bfd7a55c6c02cfcd422ea042}{find\+\_\+movement\+\_\+direction}} (char \texorpdfstring{$\ast$}{*}input\+String)
+\begin{DoxyCompactList}\small\item\em finds a direction within the string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8c_a0c0cb6599e5b5bdb7fa4271693931d63}{to\+\_\+lower}} (char \texorpdfstring{$\ast$}{*}string, size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{utils_8c_a1710f1c614e66396b5aaed9d78994d07}{get\+\_\+string\+\_\+from\+\_\+user}} (char \texorpdfstring{$\ast$}{*}buffer)
+\item 
+void \mbox{\hyperlink{utils_8c_a191afc58fb9f5bc145a58eefac945575}{exit\+\_\+game}} ()
+\item 
+void \mbox{\hyperlink{utils_8c_a744d126c30db3326cdb5ef63b3a60e4e}{slice}} (const char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}result, size\+\_\+t start, size\+\_\+t end)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8c_a191afc58fb9f5bc145a58eefac945575}\index{utils.c@{utils.c}!exit\_game@{exit\_game}}
+\index{exit\_game@{exit\_game}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{exit\_game()}{exit\_game()}}
+{\footnotesize\ttfamily \label{utils_8c_a191afc58fb9f5bc145a58eefac945575} 
+void exit\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This function safely terminates the game, freeing allocated resources before exiting.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+Ensure that all necessary cleanup operations are performed before calling this function. 
+\end{DoxyWarning}
+\Hypertarget{utils_8c_a1e5452c3bfd7a55c6c02cfcd422ea042}\index{utils.c@{utils.c}!find\_movement\_direction@{find\_movement\_direction}}
+\index{find\_movement\_direction@{find\_movement\_direction}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{find\_movement\_direction()}{find\_movement\_direction()}}
+{\footnotesize\ttfamily \label{utils_8c_a1e5452c3bfd7a55c6c02cfcd422ea042} 
+unsigned char find\+\_\+movement\+\_\+direction (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input\+String}{}\end{DoxyParamCaption})}
+
+
+
+finds a direction within the string 
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+returns 4 on error 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned char, S = 0, N = 1, E = 2, W = 3, ERROR = 4 
+\end{DoxyReturn}
+\Hypertarget{utils_8c_a1710f1c614e66396b5aaed9d78994d07}\index{utils.c@{utils.c}!get\_string\_from\_user@{get\_string\_from\_user}}
+\index{get\_string\_from\_user@{get\_string\_from\_user}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{get\_string\_from\_user()}{get\_string\_from\_user()}}
+{\footnotesize\ttfamily \label{utils_8c_a1710f1c614e66396b5aaed9d78994d07} 
+void get\+\_\+string\+\_\+from\+\_\+user (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8c_acb5fe18ecde66ace3bd57daee5d1d7f9}\index{utils.c@{utils.c}!process\_command\_line\_inputs@{process\_command\_line\_inputs}}
+\index{process\_command\_line\_inputs@{process\_command\_line\_inputs}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{process\_command\_line\_inputs()}{process\_command\_line\_inputs()}}
+{\footnotesize\ttfamily \label{utils_8c_acb5fe18ecde66ace3bd57daee5d1d7f9} 
+void process\+\_\+command\+\_\+line\+\_\+inputs (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8c_a744d126c30db3326cdb5ef63b3a60e4e}\index{utils.c@{utils.c}!slice@{slice}}
+\index{slice@{slice}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily \label{utils_8c_a744d126c30db3326cdb5ef63b3a60e4e} 
+void slice (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{result}{, }\item[{size\+\_\+t}]{start}{, }\item[{size\+\_\+t}]{end}{}\end{DoxyParamCaption})}
+
+Slices a string into two parts using a buffer. Taken from\+: \href{https://stackoverflow.com/questions/26620388/c-substrings-c-string-slicing}{\texttt{ https\+://stackoverflow.\+com/questions/26620388/c-\/substrings-\/c-\/string-\/slicing}}
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em const} & char\texorpdfstring{$\ast$}{*} str, the string which will be spliced \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & result the buffer that the sliced string will be stored into \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & the start index of the splice \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & the end index of the splice \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utils_8c_a0c0cb6599e5b5bdb7fa4271693931d63}\index{utils.c@{utils.c}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}}
+{\footnotesize\ttfamily \label{utils_8c_a0c0cb6599e5b5bdb7fa4271693931d63} 
+void to\+\_\+lower (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+This function converts all characters in the given string to lowercase.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em char\texorpdfstring{$\ast$}{*}} & string A pointer to the string that will be converted to lowercase. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & size The size of the string to ensure safe processing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that the string is properly allocated and null-\/terminated before calling this function. 
+\end{DoxyWarning}

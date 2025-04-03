@@ -1,0 +1,62 @@
+\doxysection{cache.\+h}
+\hypertarget{cache_8h_source}{}\label{cache_8h_source}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/cache.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/cache.h}}
+\mbox{\hyperlink{cache_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAX\_ACTION\_LENGTH\ 10}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ SAVE\_FILE\ "{}savegame.dat"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{room_8h}{room.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structword_cache}{wordCache}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structword_cache_aad92cd73bd688f6191d54132dd7aab7f}{data}}[\mbox{\hyperlink{cache_8h_ab324a8231a9315a97f3fd56dd2c9e77e}{MAX\_ACTION\_LENGTH}}];}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structword_cache_ac8d42bcd4a44e078047ccd7291059238}{length}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structword_cache_a21e0bf1a9d91fa07cd775938edea76ad}{ID}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structword_cache}{wordCache}}*\ \mbox{\hyperlink{structword_cache_a4ce1a973c73fb8058e267732e9887197}{next}};}
+\DoxyCodeLine{00019\ \}\ \mbox{\hyperlink{structword_cache}{wordCache}},\ *\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structitem_cache}{itemCache}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}\ \mbox{\hyperlink{structitem_cache_a1bfdc34c427820a73ab549f7e8e274c2}{data}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structitem_cache}{itemCache}}*\ \mbox{\hyperlink{structitem_cache_a2af8559de75b32ab423d1c57c497e899}{next}};}
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{cache_8h_a58d2b8f187d8da728ff38e4d809ddf4f}{itemCACHE}},\ *\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structroom_cache}{roomCache}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}\ \mbox{\hyperlink{structroom_cache_ad63a2aade81ad68406e4642161115e3c}{data}};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structroom_cache}{roomCache}}*\ \mbox{\hyperlink{structroom_cache_aa5884837d1a493238328b3d00ec5bcd0}{next}};}
+\DoxyCodeLine{00041\ \}\ \mbox{\hyperlink{structroom_cache}{roomCache}},\ *\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ \mbox{\hyperlink{cache_8h_abb33ff02c6f018deb16190b4584bea64}{create\_item\_cache}}();}
+\DoxyCodeLine{00044\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}}\ \mbox{\hyperlink{cache_8h_adc28c9751f4f121c8c19e9f74e32886a}{create\_room\_cache}}();}
+\DoxyCodeLine{00045\ \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}}\ \mbox{\hyperlink{cache_8h_ab5ca53aa3f6e5e94ef96daddb84db95a}{create\_word\_cache}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}}\ \mbox{\hyperlink{cache_8h_af68553a8be3eed067ac3fadc16b4433d}{add\_word\_to\_cache}}(\textcolor{keywordtype}{char}*,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char},\ \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a393ef341ade756be65b165fd394690b9}{add\_item\_to\_masterArray}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{cache_8h_a6ede97d7ce7c2f11b88e616b258c351f}{check\_word\_cache}}(\textcolor{keywordtype}{char}*,\ \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}\ \mbox{\hyperlink{cache_8h_a84dfc9a765660ba8e53e40fbdedcac9c}{find\_item\_in\_string}}(\textcolor{keywordtype}{char}*,\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}});}
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_aca62875b149832cb6a3377e371fa8705}{act\_on\_cache}}(\textcolor{keywordtype}{int},\ \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}},\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}},\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}},\ \mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}},\ \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_aa5046f8bb071f23e38816e0a478abc08}{display\_Cache}}(\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}});}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a64c6eb684da2d8d04b4090e748851783}{display\_equipped\_item\_cache}}(\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}\ \mbox{\hyperlink{cache_8h_a42342aa3cc3a66cc187e36a5d5bd755f}{find\_room\_by\_id\_in\_masterArray}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ \mbox{\hyperlink{cache_8h_abb33ff02c6f018deb16190b4584bea64}{create\_item\_cache}}();}
+\DoxyCodeLine{00064\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}}\ \mbox{\hyperlink{cache_8h_adc28c9751f4f121c8c19e9f74e32886a}{create\_room\_cache}}();}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_ac3b7ce8d2a3f8ddc622c9130228aa971}{destroy\_word\_cache}}(\mbox{\hyperlink{cache_8h_a781b42ad24952987b483901ea2ec06d5}{PwordCache}}\ cache);}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a6bbf386a5561d7d3bc463d02ecc22e2f}{destroy\_item\_cache}}(\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ cache);}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_aee911997f2109c91e4929c709e2c5be6}{destroy\_room\_cache}}(\mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}}\ cache);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{//\ Adding\ to\ Cache}}
+\DoxyCodeLine{00070\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ \mbox{\hyperlink{cache_8h_a0285e9dd90b256adad4486e2cf39005c}{add\_to\_item\_cache}}(\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}\ \mbox{\hyperlink{structitem}{item}},\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ cache);}
+\DoxyCodeLine{00071\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}}\ \mbox{\hyperlink{cache_8h_af9aae61daaf2f481e31c915a21066dde}{add\_to\_room\_cache}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}\ \mbox{\hyperlink{structroom}{room}},\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}}\ cache);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}}\ \mbox{\hyperlink{cache_8h_a0de09941b5355cc0ac3c023c3ef58a5f}{populateItemCache}}(\mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}});}
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a8ea13b68f3c359c64a13156a9bf77b6b}{move}}(\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}\ \mbox{\hyperlink{structplayer}{player}},\ \textcolor{keywordtype}{int}\ direction,\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}},\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}});}
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a708ee46c572003ff9db63fc07e5fc9ad}{save\_game}}(\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}},\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}},\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}});}
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cache_8h_a9987b457fb862864353a03bce8f23825}{load\_from\_default\_file}}(\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}},\ \mbox{\hyperlink{cache_8h_a54ec5a9be0797bc87c9f82d0eae580f4}{PitemCACHE}},\ \mbox{\hyperlink{cache_8h_ae93e67039490b4a3ee0e7f552f9a721d}{ProomCache}});}
+
+\end{DoxyCode}

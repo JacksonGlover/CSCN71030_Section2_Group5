@@ -1,0 +1,193 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/utils.h File Reference}
+\hypertarget{utils_8h}{}\label{utils_8h}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/utils.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utils_8h_af09fae70373a0e526b13327d6bc64c46}{MAX\+\_\+\+INPUT\+\_\+\+STRING\+\_\+\+SIZE}}~100
+\item 
+\#define \mbox{\hyperlink{utils_8h_a34995b955465f6bbb37c359173d50477}{ANSI\+\_\+\+COLOR\+\_\+\+RED}}~"{}\textbackslash{}x1b\mbox{[}31m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a966c72d8d733c7734c6c784753d894c7}{ANSI\+\_\+\+COLOR\+\_\+\+GREEN}}~"{}\textbackslash{}x1b\mbox{[}32m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a5a123b382640b3aa65dd5db386002fbc}{ANSI\+\_\+\+COLOR\+\_\+\+YELLOW}}~"{}\textbackslash{}x1b\mbox{[}33m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_aca16e6a49eb51333c5fd3eee19487315}{ANSI\+\_\+\+COLOR\+\_\+\+BLUE}}~"{}\textbackslash{}x1b\mbox{[}34m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_acb30614ba1535da5b9d0c490b3c10515}{ANSI\+\_\+\+COLOR\+\_\+\+MAGENTA}}~"{}\textbackslash{}x1b\mbox{[}35m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a8d0b0043e152438bb39b918a1f98c65f}{ANSI\+\_\+\+COLOR\+\_\+\+CYAN}}~"{}\textbackslash{}x1b\mbox{[}36m"{}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a92a364c2b863dde1a024a77eac2a5b3b}{ANSI\+\_\+\+COLOR\+\_\+\+RESET}}~"{}\textbackslash{}x1b\mbox{[}0m"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8h_acb5fe18ecde66ace3bd57daee5d1d7f9}{process\+\_\+command\+\_\+line\+\_\+inputs}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\item 
+unsigned char \mbox{\hyperlink{utils_8h_a1328d8d8f6466cf7327fcf93422be241}{find\+\_\+movement\+\_\+direction}} (char \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em finds a direction within the string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_ad6724144c793706c5b1d3521a593a318}{to\+\_\+lower}} (char \texorpdfstring{$\ast$}{*}, size\+\_\+t)
+\item 
+void \mbox{\hyperlink{utils_8h_a38240f1034585daa0b0582ff0a90abeb}{get\+\_\+string\+\_\+from\+\_\+user}} (char \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{utils_8h_a191afc58fb9f5bc145a58eefac945575}{exit\+\_\+game}} ()
+\item 
+void \mbox{\hyperlink{utils_8h_a744d126c30db3326cdb5ef63b3a60e4e}{slice}} (const char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}result, size\+\_\+t start, size\+\_\+t end)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{utils_8h_aca16e6a49eb51333c5fd3eee19487315}\index{utils.h@{utils.h}!ANSI\_COLOR\_BLUE@{ANSI\_COLOR\_BLUE}}
+\index{ANSI\_COLOR\_BLUE@{ANSI\_COLOR\_BLUE}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_BLUE}{ANSI\_COLOR\_BLUE}}
+{\footnotesize\ttfamily \label{utils_8h_aca16e6a49eb51333c5fd3eee19487315} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+BLUE~"{}\textbackslash{}x1b\mbox{[}34m"{}}
+
+\Hypertarget{utils_8h_a8d0b0043e152438bb39b918a1f98c65f}\index{utils.h@{utils.h}!ANSI\_COLOR\_CYAN@{ANSI\_COLOR\_CYAN}}
+\index{ANSI\_COLOR\_CYAN@{ANSI\_COLOR\_CYAN}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_CYAN}{ANSI\_COLOR\_CYAN}}
+{\footnotesize\ttfamily \label{utils_8h_a8d0b0043e152438bb39b918a1f98c65f} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+CYAN~"{}\textbackslash{}x1b\mbox{[}36m"{}}
+
+\Hypertarget{utils_8h_a966c72d8d733c7734c6c784753d894c7}\index{utils.h@{utils.h}!ANSI\_COLOR\_GREEN@{ANSI\_COLOR\_GREEN}}
+\index{ANSI\_COLOR\_GREEN@{ANSI\_COLOR\_GREEN}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_GREEN}{ANSI\_COLOR\_GREEN}}
+{\footnotesize\ttfamily \label{utils_8h_a966c72d8d733c7734c6c784753d894c7} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+GREEN~"{}\textbackslash{}x1b\mbox{[}32m"{}}
+
+\Hypertarget{utils_8h_acb30614ba1535da5b9d0c490b3c10515}\index{utils.h@{utils.h}!ANSI\_COLOR\_MAGENTA@{ANSI\_COLOR\_MAGENTA}}
+\index{ANSI\_COLOR\_MAGENTA@{ANSI\_COLOR\_MAGENTA}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_MAGENTA}{ANSI\_COLOR\_MAGENTA}}
+{\footnotesize\ttfamily \label{utils_8h_acb30614ba1535da5b9d0c490b3c10515} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+MAGENTA~"{}\textbackslash{}x1b\mbox{[}35m"{}}
+
+\Hypertarget{utils_8h_a34995b955465f6bbb37c359173d50477}\index{utils.h@{utils.h}!ANSI\_COLOR\_RED@{ANSI\_COLOR\_RED}}
+\index{ANSI\_COLOR\_RED@{ANSI\_COLOR\_RED}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_RED}{ANSI\_COLOR\_RED}}
+{\footnotesize\ttfamily \label{utils_8h_a34995b955465f6bbb37c359173d50477} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+RED~"{}\textbackslash{}x1b\mbox{[}31m"{}}
+
+\Hypertarget{utils_8h_a92a364c2b863dde1a024a77eac2a5b3b}\index{utils.h@{utils.h}!ANSI\_COLOR\_RESET@{ANSI\_COLOR\_RESET}}
+\index{ANSI\_COLOR\_RESET@{ANSI\_COLOR\_RESET}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_RESET}{ANSI\_COLOR\_RESET}}
+{\footnotesize\ttfamily \label{utils_8h_a92a364c2b863dde1a024a77eac2a5b3b} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+RESET~"{}\textbackslash{}x1b\mbox{[}0m"{}}
+
+\Hypertarget{utils_8h_a5a123b382640b3aa65dd5db386002fbc}\index{utils.h@{utils.h}!ANSI\_COLOR\_YELLOW@{ANSI\_COLOR\_YELLOW}}
+\index{ANSI\_COLOR\_YELLOW@{ANSI\_COLOR\_YELLOW}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{ANSI\_COLOR\_YELLOW}{ANSI\_COLOR\_YELLOW}}
+{\footnotesize\ttfamily \label{utils_8h_a5a123b382640b3aa65dd5db386002fbc} 
+\#define ANSI\+\_\+\+COLOR\+\_\+\+YELLOW~"{}\textbackslash{}x1b\mbox{[}33m"{}}
+
+\Hypertarget{utils_8h_af09fae70373a0e526b13327d6bc64c46}\index{utils.h@{utils.h}!MAX\_INPUT\_STRING\_SIZE@{MAX\_INPUT\_STRING\_SIZE}}
+\index{MAX\_INPUT\_STRING\_SIZE@{MAX\_INPUT\_STRING\_SIZE}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_INPUT\_STRING\_SIZE}{MAX\_INPUT\_STRING\_SIZE}}
+{\footnotesize\ttfamily \label{utils_8h_af09fae70373a0e526b13327d6bc64c46} 
+\#define MAX\+\_\+\+INPUT\+\_\+\+STRING\+\_\+\+SIZE~100}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8h_a191afc58fb9f5bc145a58eefac945575}\index{utils.h@{utils.h}!exit\_game@{exit\_game}}
+\index{exit\_game@{exit\_game}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{exit\_game()}{exit\_game()}}
+{\footnotesize\ttfamily \label{utils_8h_a191afc58fb9f5bc145a58eefac945575} 
+void exit\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+This function safely terminates the game, freeing allocated resources before exiting.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+Ensure that all necessary cleanup operations are performed before calling this function. 
+\end{DoxyWarning}
+\Hypertarget{utils_8h_a1328d8d8f6466cf7327fcf93422be241}\index{utils.h@{utils.h}!find\_movement\_direction@{find\_movement\_direction}}
+\index{find\_movement\_direction@{find\_movement\_direction}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{find\_movement\_direction()}{find\_movement\_direction()}}
+{\footnotesize\ttfamily \label{utils_8h_a1328d8d8f6466cf7327fcf93422be241} 
+unsigned char find\+\_\+movement\+\_\+direction (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{input\+String}{}\end{DoxyParamCaption})}
+
+
+
+finds a direction within the string 
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+returns 4 on error 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em input\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned char, S = 0, N = 1, E = 2, W = 3, ERROR = 4 
+\end{DoxyReturn}
+\Hypertarget{utils_8h_a38240f1034585daa0b0582ff0a90abeb}\index{utils.h@{utils.h}!get\_string\_from\_user@{get\_string\_from\_user}}
+\index{get\_string\_from\_user@{get\_string\_from\_user}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{get\_string\_from\_user()}{get\_string\_from\_user()}}
+{\footnotesize\ttfamily \label{utils_8h_a38240f1034585daa0b0582ff0a90abeb} 
+void get\+\_\+string\+\_\+from\+\_\+user (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8h_acb5fe18ecde66ace3bd57daee5d1d7f9}\index{utils.h@{utils.h}!process\_command\_line\_inputs@{process\_command\_line\_inputs}}
+\index{process\_command\_line\_inputs@{process\_command\_line\_inputs}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{process\_command\_line\_inputs()}{process\_command\_line\_inputs()}}
+{\footnotesize\ttfamily \label{utils_8h_acb5fe18ecde66ace3bd57daee5d1d7f9} 
+void process\+\_\+command\+\_\+line\+\_\+inputs (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8h_a744d126c30db3326cdb5ef63b3a60e4e}\index{utils.h@{utils.h}!slice@{slice}}
+\index{slice@{slice}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily \label{utils_8h_a744d126c30db3326cdb5ef63b3a60e4e} 
+void slice (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{result}{, }\item[{size\+\_\+t}]{start}{, }\item[{size\+\_\+t}]{end}{}\end{DoxyParamCaption})}
+
+Slices a string into two parts using a buffer. Taken from\+: \href{https://stackoverflow.com/questions/26620388/c-substrings-c-string-slicing}{\texttt{ https\+://stackoverflow.\+com/questions/26620388/c-\/substrings-\/c-\/string-\/slicing}}
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em const} & char\texorpdfstring{$\ast$}{*} str, the string which will be spliced \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & result the buffer that the sliced string will be stored into \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & the start index of the splice \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & the end index of the splice \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utils_8h_ad6724144c793706c5b1d3521a593a318}\index{utils.h@{utils.h}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}}
+{\footnotesize\ttfamily \label{utils_8h_ad6724144c793706c5b1d3521a593a318} 
+void to\+\_\+lower (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+This function converts all characters in the given string to lowercase.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em char\texorpdfstring{$\ast$}{*}} & string A pointer to the string that will be converted to lowercase. \\
+\hline
+\mbox{\texttt{ in}}  & {\em size\+\_\+t} & size The size of the string to ensure safe processing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that the string is properly allocated and null-\/terminated before calling this function. 
+\end{DoxyWarning}

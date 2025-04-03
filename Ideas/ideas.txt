@@ -1,0 +1,5 @@
+items can be stored in an array (limiting inventory space) using pointers to traverse the binary
+exit button will be present at all points in the game, using the save button will peform a save to file & a clean exit
+on the main menu there will be a "load from file" button
+the command line arguement could be to determine the color of the terminal assuming we set the terminal mode to UTF-8 encoding
+the email section can use a random number generation to determine if the computer will crash

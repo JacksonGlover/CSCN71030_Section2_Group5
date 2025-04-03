@@ -1,0 +1,229 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/room.c File Reference}
+\hypertarget{room_8c}{}\label{room_8c}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/room.c@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/room.c}}
+{\ttfamily \#include "{}room.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{room_8c_a2112c36c703fc73fb1ae766bfd736949}{generate\+\_\+room}} (int id)
+\item 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{room_8c_a18c40bbfcc48ee490f1261566595b47a}{generate\+\_\+empty\+\_\+room}} (void)
+\item 
+\mbox{\hyperlink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG}} \mbox{\hyperlink{room_8c_a5c5f0a0b91be8736299bb8d7dedbc2ac}{generate\+\_\+room\+\_\+flag}} (char flag)
+\item 
+void \mbox{\hyperlink{room_8c_a5f6df4d3d3abb2b1e33989cb1edea827}{generate\+\_\+room\+\_\+flags}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\item 
+void \mbox{\hyperlink{room_8c_a5938be670776266eb227938164df7bd2}{update\+\_\+room\+\_\+flags}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}}, char type\mbox{[}\mbox{\hyperlink{item_8h_a0c397a708cec89c74029582574516b30}{MAX\+\_\+\+NAME\+\_\+\+LENGTH}}\mbox{]})
+\item 
+void \mbox{\hyperlink{room_8c_a6defccc406852bdea4899a1cc8976107}{set\+\_\+room\+\_\+description}} (char \texorpdfstring{$\ast$}{*}string, \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\item 
+void \mbox{\hyperlink{room_8c_aab4e6eca322ab278318e56c947b09180}{set\+\_\+room\+\_\+id}} (int id, \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\item 
+void \mbox{\hyperlink{room_8c_a2a5d76f0bec4ab9168af0289b9526f59}{describe\+\_\+room\+\_\+scene}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} current\+Room)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{room_8c_af0aff9742cf7d72987aa29e2359cb502}{get\+\_\+room\+\_\+description}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\item 
+unsigned char \mbox{\hyperlink{room_8c_a3a678051243e3ceb5ec9587faaa71f06}{get\+\_\+room\+\_\+id}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\item 
+void \mbox{\hyperlink{room_8c_a8e4ed24a69e186835cc9d9e7134e7b72}{destroy\+\_\+room}} (\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} \mbox{\hyperlink{structroom}{room}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{room_8c_a2a5d76f0bec4ab9168af0289b9526f59}\index{room.c@{room.c}!describe\_room\_scene@{describe\_room\_scene}}
+\index{describe\_room\_scene@{describe\_room\_scene}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{describe\_room\_scene()}{describe\_room\_scene()}}
+{\footnotesize\ttfamily \label{room_8c_a2a5d76f0bec4ab9168af0289b9526f59} 
+void describe\+\_\+room\+\_\+scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{current\+Room}{}\end{DoxyParamCaption})}
+
+Pulls the room description \& describes the scene to the player Each flag corresponds to a certain sub-\/description that a room may have
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the current room the player is in that we want to describe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a8e4ed24a69e186835cc9d9e7134e7b72}\index{room.c@{room.c}!destroy\_room@{destroy\_room}}
+\index{destroy\_room@{destroy\_room}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_room()}{destroy\_room()}}
+{\footnotesize\ttfamily \label{room_8c_a8e4ed24a69e186835cc9d9e7134e7b72} 
+void destroy\+\_\+room (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+frees the room from memory
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em room} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]The room is not set to NULL afterwards \end{DoxyRefDesc}
+\Hypertarget{room_8c_a18c40bbfcc48ee490f1261566595b47a}\index{room.c@{room.c}!generate\_empty\_room@{generate\_empty\_room}}
+\index{generate\_empty\_room@{generate\_empty\_room}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{generate\_empty\_room()}{generate\_empty\_room()}}
+{\footnotesize\ttfamily \label{room_8c_a18c40bbfcc48ee490f1261566595b47a} 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} generate\+\_\+empty\+\_\+room (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+allocates room into heap, sets all content to null or 0 or "{}"{}
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM} the empty room that was generated 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a2112c36c703fc73fb1ae766bfd736949}\index{room.c@{room.c}!generate\_room@{generate\_room}}
+\index{generate\_room@{generate\_room}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{generate\_room()}{generate\_room()}}
+{\footnotesize\ttfamily \label{room_8c_a2112c36c703fc73fb1ae766bfd736949} 
+\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} generate\+\_\+room (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+Creates a new room and sets the description based on the room ID This is because all rooms are hardcoded
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & the ID of the room you wish to generate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM} the generated room 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a5c5f0a0b91be8736299bb8d7dedbc2ac}\index{room.c@{room.c}!generate\_room\_flag@{generate\_room\_flag}}
+\index{generate\_room\_flag@{generate\_room\_flag}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{generate\_room\_flag()}{generate\_room\_flag()}}
+{\footnotesize\ttfamily \label{room_8c_a5c5f0a0b91be8736299bb8d7dedbc2ac} 
+\mbox{\hyperlink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG}} generate\+\_\+room\+\_\+flag (\begin{DoxyParamCaption}\item[{char}]{flag}{}\end{DoxyParamCaption})}
+
+This creates a new flag with a default value of 0 The flag value will then be replaced with the input param
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char} & flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG} a non-\/pointer flag object 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a5f6df4d3d3abb2b1e33989cb1edea827}\index{room.c@{room.c}!generate\_room\_flags@{generate\_room\_flags}}
+\index{generate\_room\_flags@{generate\_room\_flags}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{generate\_room\_flags()}{generate\_room\_flags()}}
+{\footnotesize\ttfamily \label{room_8c_a5f6df4d3d3abb2b1e33989cb1edea827} 
+void generate\+\_\+room\+\_\+flags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+Creates flags for the room for future use
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the room that the flags will be assigned to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{room_8c_af0aff9742cf7d72987aa29e2359cb502}\index{room.c@{room.c}!get\_room\_description@{get\_room\_description}}
+\index{get\_room\_description@{get\_room\_description}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{get\_room\_description()}{get\_room\_description()}}
+{\footnotesize\ttfamily \label{room_8c_af0aff9742cf7d72987aa29e2359cb502} 
+char \texorpdfstring{$\ast$}{*} get\+\_\+room\+\_\+description (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+Pulls the room description \& returns it
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the room to pull data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} the description header 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a3a678051243e3ceb5ec9587faaa71f06}\index{room.c@{room.c}!get\_room\_id@{get\_room\_id}}
+\index{get\_room\_id@{get\_room\_id}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{get\_room\_id()}{get\_room\_id()}}
+{\footnotesize\ttfamily \label{room_8c_a3a678051243e3ceb5ec9587faaa71f06} 
+unsigned char get\+\_\+room\+\_\+id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+Pulls the room ID \& returns it \begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned char 
+\end{DoxyReturn}
+\Hypertarget{room_8c_a6defccc406852bdea4899a1cc8976107}\index{room.c@{room.c}!set\_room\_description@{set\_room\_description}}
+\index{set\_room\_description@{set\_room\_description}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{set\_room\_description()}{set\_room\_description()}}
+{\footnotesize\ttfamily \label{room_8c_a6defccc406852bdea4899a1cc8976107} 
+void set\+\_\+room\+\_\+description (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+Sets a rooms description using a string copy
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & the new description \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the room to affect \\
+\hline
+\end{DoxyParams}
+\Hypertarget{room_8c_aab4e6eca322ab278318e56c947b09180}\index{room.c@{room.c}!set\_room\_id@{set\_room\_id}}
+\index{set\_room\_id@{set\_room\_id}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{set\_room\_id()}{set\_room\_id()}}
+{\footnotesize\ttfamily \label{room_8c_aab4e6eca322ab278318e56c947b09180} 
+void set\+\_\+room\+\_\+id (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{}\end{DoxyParamCaption})}
+
+Sets a rooms ID
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & the new ID \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}} & the room to affect \\
+\hline
+\end{DoxyParams}
+\Hypertarget{room_8c_a5938be670776266eb227938164df7bd2}\index{room.c@{room.c}!update\_room\_flags@{update\_room\_flags}}
+\index{update\_room\_flags@{update\_room\_flags}!room.c@{room.c}}
+\doxysubsubsection{\texorpdfstring{update\_room\_flags()}{update\_room\_flags()}}
+{\footnotesize\ttfamily \label{room_8c_a5938be670776266eb227938164df7bd2} 
+void update\+\_\+room\+\_\+flags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}}]{room}{, }\item[{char}]{type}{\mbox{[}\+MAX\+\_\+\+NAME\+\_\+\+LENGTH\mbox{]}}\end{DoxyParamCaption})}
+
+updates room flags by recieving a string to specify the action that has been done once done, the rooms flags are updated
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em room} & a pointer to a \doxylink{room_8h_add54401673dfe6563715a23cc545df99}{ROOM} object \\
+\hline
+{\em type} & a string to specify the type of action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

@@ -1,0 +1,315 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/item.c File Reference}
+\hypertarget{item_8c}{}\label{item_8c}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/item.c@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/item.c}}
+{\ttfamily \#include "{}item.\+h"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{item_8c_a00be56e220cf4ee89421120ef0ece4d0}{generate\+\_\+item}} (void)
+\item 
+void \mbox{\hyperlink{item_8c_a3207a58c0e9ca35d962381c8987ef595}{set\+\_\+item\+\_\+name}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, char \texorpdfstring{$\ast$}{*}name)
+\item 
+void \mbox{\hyperlink{item_8c_a43ec52a4cc10a4fdd792902cc6b97697}{set\+\_\+item\+\_\+desc}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, char \texorpdfstring{$\ast$}{*}desc)
+\item 
+void \mbox{\hyperlink{item_8c_a52f2e186b57684dc4956fff9798e8604}{set\+\_\+spawn\+Room\+ID}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, unsigned char id)
+\item 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} \mbox{\hyperlink{item_8c_a930aa01999bdc99e8e160cf073abdd91}{generate\+\_\+item\+\_\+list}} (void)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{item_8c_a96ba9655c8a2c406bc82925b8e6c3540}{get\+\_\+item\+\_\+name}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{item_8c_a09f58997462b07b8f5e722b8d4d02276}{get\+\_\+item\+\_\+desc}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+unsigned char \mbox{\hyperlink{item_8c_a955f7fb7ee85d6b3f5b99dea28c3b5c9}{get\+\_\+spawn\+Room\+ID}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} \mbox{\hyperlink{item_8c_a8c8e7f942a7a47405e6100a38ca275cf}{add\+\_\+item\+\_\+to\+\_\+itemlist}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, \mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} list)
+\item 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} \mbox{\hyperlink{item_8c_a3d8dae471410e0c48a999223d29d17b5}{remove\+\_\+item\+\_\+from\+\_\+itemlist}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}}, \mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} list)
+\item 
+void \mbox{\hyperlink{item_8c_a120a2ab96863421e20aca869986ecabb}{destroy\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+void \mbox{\hyperlink{item_8c_a11ded1df58c6c144dfbda01ba018d25e}{destroy\+\_\+item\+\_\+list}} (\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} list)
+\item 
+void \mbox{\hyperlink{item_8c_a7bd440d205121479be58987e010a3e5a}{describe\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{structitem}{item}})
+\item 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} \mbox{\hyperlink{item_8c_a19c9955d64a579830a1f581402965bff}{find\+\_\+item\+\_\+by\+\_\+name}} (char \texorpdfstring{$\ast$}{*}name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{item_8c_a8c8e7f942a7a47405e6100a38ca275cf}\index{item.c@{item.c}!add\_item\_to\_itemlist@{add\_item\_to\_itemlist}}
+\index{add\_item\_to\_itemlist@{add\_item\_to\_itemlist}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{add\_item\_to\_itemlist()}{add\_item\_to\_itemlist()}}
+{\footnotesize\ttfamily \label{item_8c_a8c8e7f942a7a47405e6100a38ca275cf} 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} add\+\_\+item\+\_\+to\+\_\+itemlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}}}]{list}{}\end{DoxyParamCaption})}
+
+This function adds an item to the specified item list.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item to be added to the list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} & list A pointer to the item list where the item will be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the updated item list, or NULL if the operation fails. 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a7bd440d205121479be58987e010a3e5a}\index{item.c@{item.c}!describe\_item@{describe\_item}}
+\index{describe\_item@{describe\_item}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{describe\_item()}{describe\_item()}}
+{\footnotesize\ttfamily \label{item_8c_a7bd440d205121479be58987e010a3e5a} 
+void describe\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+This function prints the description of the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion \& Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item whose description will be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that the item has a valid description \& is string terminated before calling this function. Otherwise you may get a char leak \& print gibberish to the screen. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a120a2ab96863421e20aca869986ecabb}\index{item.c@{item.c}!destroy\_item@{destroy\_item}}
+\index{destroy\_item@{destroy\_item}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_item()}{destroy\_item()}}
+{\footnotesize\ttfamily \label{item_8c_a120a2ab96863421e20aca869986ecabb} 
+void destroy\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+This function deallocates memory and destroys the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item that will be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that no other components are referencing the item before destroying it. 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]the item is not NULL after free \end{DoxyRefDesc}
+\Hypertarget{item_8c_a11ded1df58c6c144dfbda01ba018d25e}\index{item.c@{item.c}!destroy\_item\_list@{destroy\_item\_list}}
+\index{destroy\_item\_list@{destroy\_item\_list}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_item\_list()}{destroy\_item\_list()}}
+{\footnotesize\ttfamily \label{item_8c_a11ded1df58c6c144dfbda01ba018d25e} 
+void destroy\+\_\+item\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}}}]{list}{}\end{DoxyParamCaption})}
+
+This function deallocates memory and destroys the specified item list.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} & list A pointer to the item list that will be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that all items within the list are properly freed before destroying the list. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a19c9955d64a579830a1f581402965bff}\index{item.c@{item.c}!find\_item\_by\_name@{find\_item\_by\_name}}
+\index{find\_item\_by\_name@{find\_item\_by\_name}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{find\_item\_by\_name()}{find\_item\_by\_name()}}
+{\footnotesize\ttfamily \label{item_8c_a19c9955d64a579830a1f581402965bff} 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} find\+\_\+item\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+This function searches for an item by its name and returns the corresponding item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & name A pointer to the name of the item to be searched. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the item if found, or NULL if no item with the specified name exists. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Returns NULL if no item with the specified name exists in the system. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a00be56e220cf4ee89421120ef0ece4d0}\index{item.c@{item.c}!generate\_item@{generate\_item}}
+\index{generate\_item@{generate\_item}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{generate\_item()}{generate\_item()}}
+{\footnotesize\ttfamily \label{item_8c_a00be56e220cf4ee89421120ef0ece4d0} 
+\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} generate\+\_\+item (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+This function generates a new item and returns a pointer to it.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly allocated item, or NULL if allocation fails. 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a930aa01999bdc99e8e160cf073abdd91}\index{item.c@{item.c}!generate\_item\_list@{generate\_item\_list}}
+\index{generate\_item\_list@{generate\_item\_list}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{generate\_item\_list()}{generate\_item\_list()}}
+{\footnotesize\ttfamily \label{item_8c_a930aa01999bdc99e8e160cf073abdd91} 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} generate\+\_\+item\+\_\+list (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+This function returns the head to the item\+\_\+list linked list
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly allocated item list, or NULL if allocation fails. 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a09f58997462b07b8f5e722b8d4d02276}\index{item.c@{item.c}!get\_item\_desc@{get\_item\_desc}}
+\index{get\_item\_desc@{get\_item\_desc}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{get\_item\_desc()}{get\_item\_desc()}}
+{\footnotesize\ttfamily \label{item_8c_a09f58997462b07b8f5e722b8d4d02276} 
+char \texorpdfstring{$\ast$}{*} get\+\_\+item\+\_\+desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+This function retrieves the description of the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item whose description will be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the item\textquotesingle{}s description, or NULL if the item is invalid or has no description set. 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a96ba9655c8a2c406bc82925b8e6c3540}\index{item.c@{item.c}!get\_item\_name@{get\_item\_name}}
+\index{get\_item\_name@{get\_item\_name}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{get\_item\_name()}{get\_item\_name()}}
+{\footnotesize\ttfamily \label{item_8c_a96ba9655c8a2c406bc82925b8e6c3540} 
+char \texorpdfstring{$\ast$}{*} get\+\_\+item\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+This function retrieves the name of the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item whose name will be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the item\textquotesingle{}s name, or NULL if the item is invalid or has no name set. 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a955f7fb7ee85d6b3f5b99dea28c3b5c9}\index{item.c@{item.c}!get\_spawnRoomID@{get\_spawnRoomID}}
+\index{get\_spawnRoomID@{get\_spawnRoomID}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{get\_spawnRoomID()}{get\_spawnRoomID()}}
+{\footnotesize\ttfamily \label{item_8c_a955f7fb7ee85d6b3f5b99dea28c3b5c9} 
+unsigned char get\+\_\+spawn\+Room\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{}\end{DoxyParamCaption})}
+
+retrieves the spawnroom\+ID from an existing item object
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item, a pointer to the item that will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned char, a unsigned interger value within 0-\/\texorpdfstring{$>$}{>}255 
+\end{DoxyReturn}
+\Hypertarget{item_8c_a3d8dae471410e0c48a999223d29d17b5}\index{item.c@{item.c}!remove\_item\_from\_itemlist@{remove\_item\_from\_itemlist}}
+\index{remove\_item\_from\_itemlist@{remove\_item\_from\_itemlist}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{remove\_item\_from\_itemlist()}{remove\_item\_from\_itemlist()}}
+{\footnotesize\ttfamily \label{item_8c_a3d8dae471410e0c48a999223d29d17b5} 
+\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} remove\+\_\+item\+\_\+from\+\_\+itemlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}}}]{list}{}\end{DoxyParamCaption})}
+
+This function removes an item from the specified item list.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item to be removed from the list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a6774536ab0c2a3f79b2dadd64de44cb4}{PITEMLIST}} & list A pointer to the item list from which the item will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the updated item list, or NULL if the operation fails or the item is not found. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure the item exists in the list before attempting to remove it. If it is not in the list, no modifications will be made. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a43ec52a4cc10a4fdd792902cc6b97697}\index{item.c@{item.c}!set\_item\_desc@{set\_item\_desc}}
+\index{set\_item\_desc@{set\_item\_desc}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{set\_item\_desc()}{set\_item\_desc()}}
+{\footnotesize\ttfamily \label{item_8c_a43ec52a4cc10a4fdd792902cc6b97697} 
+void set\+\_\+item\+\_\+desc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{desc}{}\end{DoxyParamCaption})}
+
+This function sets the description of the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item whose description will be set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & desc A pointer to the description string to assign to the item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that the description string is properly allocated and does not exceed the maximum allowed length. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a3207a58c0e9ca35d962381c8987ef595}\index{item.c@{item.c}!set\_item\_name@{set\_item\_name}}
+\index{set\_item\_name@{set\_item\_name}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{set\_item\_name()}{set\_item\_name()}}
+{\footnotesize\ttfamily \label{item_8c_a3207a58c0e9ca35d962381c8987ef595} 
+void set\+\_\+item\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+This function sets the name of the specified item.
+
+\begin{DoxyAuthor}{Author}
+Maxwell Omorodion 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & item A pointer to the item whose name will be set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\texorpdfstring{$\ast$}{*}} & name A pointer to the name string to assign to the item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Ensure that the name string is properly allocated and does not exceed the maximum allowed length. 
+\end{DoxyWarning}
+\Hypertarget{item_8c_a52f2e186b57684dc4956fff9798e8604}\index{item.c@{item.c}!set\_spawnRoomID@{set\_spawnRoomID}}
+\index{set\_spawnRoomID@{set\_spawnRoomID}!item.c@{item.c}}
+\doxysubsubsection{\texorpdfstring{set\_spawnRoomID()}{set\_spawnRoomID()}}
+{\footnotesize\ttfamily \label{item_8c_a52f2e186b57684dc4956fff9798e8604} 
+void set\+\_\+spawn\+Room\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{unsigned char}]{id}{}\end{DoxyParamCaption})}
+

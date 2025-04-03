@@ -1,0 +1,38 @@
+\doxysection{room.\+h}
+\hypertarget{room_8h_source}{}\label{room_8h_source}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/room.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/room.h}}
+\mbox{\hyperlink{room_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ }}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ MAX\_ROOM\_DESCRIPTION\ \ \ \ 650}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ MAX\_FLAG\_COUNT\ \ \ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structroom_flag}{roomFlag}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structroom_flag_a11764cc96bb263d1f257bcc01205a787}{flag}};}
+\DoxyCodeLine{00015\ \}\ \mbox{\hyperlink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG}},\ *\mbox{\hyperlink{room_8h_a93c938220ebeaf5396cd3e4dc14a4a44}{PROOMFLAG}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structroom}{room}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG}}\ \mbox{\hyperlink{structroom_a92c8bb5a0ff1eb24d5d014f215773746}{flags}}[\mbox{\hyperlink{room_8h_acd3dd88d25b250006effef2b15564e31}{MAX\_FLAG\_COUNT}}];\ \textcolor{comment}{//\ flag\ ID's\ can\ be\ tied\ to\ the\ index}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structroom_a3a68a4a8639345bc500cd6794a4fc76b}{roomID}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structroom_a7086dda6edd85c301592d238e02f943a}{description}}[\mbox{\hyperlink{room_8h_a307d8fd9bc5399a1cc379211eac212c0}{MAX\_ROOM\_DESCRIPTION}}];}
+\DoxyCodeLine{00029\ \}\mbox{\hyperlink{room_8h_add54401673dfe6563715a23cc545df99}{ROOM}},\ *\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}\ \mbox{\hyperlink{room_8h_a2112c36c703fc73fb1ae766bfd736949}{generate\_room}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00032\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}}\ \mbox{\hyperlink{room_8h_a18c40bbfcc48ee490f1261566595b47a}{generate\_empty\_room}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \mbox{\hyperlink{room_8h_a5cf55c3567cc7c0bb2518fa574fb5bb1}{ROOMFLAG}}\ \mbox{\hyperlink{room_8h_a3856a0ac0832fd175a24c47276776bd3}{generate\_room\_flag}}(\textcolor{keywordtype}{char});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_aa612c592abbb24e22fb7c68e032b2731}{generate\_room\_flags}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a32cd41dc55cd9d10174199886ba8ab84}{update\_room\_flags}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}},\ \textcolor{keywordtype}{char}[\mbox{\hyperlink{item_8h_a0c397a708cec89c74029582574516b30}{MAX\_NAME\_LENGTH}}]);}
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a60165a73d0609fc0080848a980cf6c63}{set\_room\_description}}(\textcolor{keywordtype}{char}*,\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a47b6a14eaef30e9d41038bbf6b5f9380}{set\_room\_id}}(\textcolor{keywordtype}{int},\ \mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a60c5b16309ef6fe8a4a5fdf564fe890d}{describe\_room\_scene}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{room_8h_a0be8e6010f1f4bda8deb659fc778d78c}{get\_room\_description}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{room_8h_a7340fd4b49fb440ed62622c6f1bb3655}{get\_room\_id}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{room_8h_a305cd436140bfb07bfdfe033ae230916}{destroy\_room}}(\mbox{\hyperlink{room_8h_aa7cf3f05b4aa0d79dece087538df9619}{PROOM}});}
+
+\end{DoxyCode}

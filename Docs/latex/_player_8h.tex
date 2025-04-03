@@ -1,0 +1,157 @@
+\doxysection{D\+:/\+Programming/\+PROG72370/\+CSCN71030\+\_\+\+Section2\+\_\+\+Group5/text-\/adventure-\/game/\+Player.h File Reference}
+\hypertarget{_player_8h}{}\label{_player_8h}\index{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.h@{D:/Programming/PROG72370/CSCN71030\_Section2\_Group5/text-\/adventure-\/game/Player.h}}
+{\ttfamily \#include "{}item.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structplayer}{player}}
+\begin{DoxyCompactList}\small\item\em the player object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structplayer}{player}} \mbox{\hyperlink{_player_8h_ad37a2a2bb56cca9770d38e36a079b187}{PLAYER}}
+\begin{DoxyCompactList}\small\item\em the player object \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structplayer}{player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} \mbox{\hyperlink{_player_8h_aad8e6f85ac3a1cd89f648a250d37e2b8}{create\+\_\+player}} (void)
+\item 
+void \mbox{\hyperlink{_player_8h_ac7a0bf9ebea241cf1bee9f308c036abd}{destroy\+\_\+player}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}})
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_player_8h_aace5e550d1ef638021b5a507be916670}{use\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}})
+\item 
+bool \mbox{\hyperlink{_player_8h_a229e4bb98b1c67b1975d41ad41e5e25a}{pickup\+\_\+item}} (\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}})
+\item 
+void \mbox{\hyperlink{_player_8h_a98bed2204f79d06c16e3e63a0e74bba4}{add\+\_\+item\+\_\+to\+\_\+inventory}} (\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}, \mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}})
+\item 
+void \mbox{\hyperlink{_player_8h_a543920d64fa844b7481c399e0c0089be}{set\+\_\+players\+\_\+room}} (unsigned char, \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}})
+\begin{DoxyCompactList}\small\item\em removes a specific item from the players inventory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_player_8h_ad37a2a2bb56cca9770d38e36a079b187}\index{Player.h@{Player.h}!PLAYER@{PLAYER}}
+\index{PLAYER@{PLAYER}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{PLAYER}{PLAYER}}
+{\footnotesize\ttfamily \label{_player_8h_ad37a2a2bb56cca9770d38e36a079b187} 
+typedef struct \mbox{\hyperlink{structplayer}{player}} \mbox{\hyperlink{_player_8h_ad37a2a2bb56cca9770d38e36a079b187}{PLAYER}}}
+
+
+
+the player object 
+
+the player objects only attribute is an unsigned char which specifies their current room in previous implimentations the player had more attributes \Hypertarget{_player_8h_aa679c86b77a142a03d861ae90bd07714}\index{Player.h@{Player.h}!PPLAYER@{PPLAYER}}
+\index{PPLAYER@{PPLAYER}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{PPLAYER}{PPLAYER}}
+{\footnotesize\ttfamily \label{_player_8h_aa679c86b77a142a03d861ae90bd07714} 
+typedef struct \mbox{\hyperlink{structplayer}{player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_player_8h_a98bed2204f79d06c16e3e63a0e74bba4}\index{Player.h@{Player.h}!add\_item\_to\_inventory@{add\_item\_to\_inventory}}
+\index{add\_item\_to\_inventory@{add\_item\_to\_inventory}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{add\_item\_to\_inventory()}{add\_item\_to\_inventory()}}
+{\footnotesize\ttfamily \label{_player_8h_a98bed2204f79d06c16e3e63a0e74bba4} 
+void add\+\_\+item\+\_\+to\+\_\+inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{}{, }\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8h_aad8e6f85ac3a1cd89f648a250d37e2b8}\index{Player.h@{Player.h}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \label{_player_8h_aad8e6f85ac3a1cd89f648a250d37e2b8} 
+\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} create\+\_\+player (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Allocates memory for a player, initializes inventory, and sets default values.
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\doxylink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER} Pointer to allocated player object, NULL on error. 
+\end{DoxyReturn}
+\Hypertarget{_player_8h_ac7a0bf9ebea241cf1bee9f308c036abd}\index{Player.h@{Player.h}!destroy\_player@{destroy\_player}}
+\index{destroy\_player@{destroy\_player}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_player()}{destroy\_player()}}
+{\footnotesize\ttfamily \label{_player_8h_ac7a0bf9ebea241cf1bee9f308c036abd} 
+void destroy\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+Frees player memory and inventory.
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player to free. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]the player pointer is not set to NULL afterwards \end{DoxyRefDesc}
+\Hypertarget{_player_8h_a229e4bb98b1c67b1975d41ad41e5e25a}\index{Player.h@{Player.h}!pickup\_item@{pickup\_item}}
+\index{pickup\_item@{pickup\_item}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{pickup\_item()}{pickup\_item()}}
+{\footnotesize\ttfamily \label{_player_8h_a229e4bb98b1c67b1975d41ad41e5e25a} 
+bool pickup\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+Attempts to pick up an item if the player is in the correct room.
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to pick up. \\
+\hline
+{\em player} & The player picking up the item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool a status code indicating if an item was picked up or not 
+\end{DoxyReturn}
+\Hypertarget{_player_8h_a543920d64fa844b7481c399e0c0089be}\index{Player.h@{Player.h}!set\_players\_room@{set\_players\_room}}
+\index{set\_players\_room@{set\_players\_room}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{set\_players\_room()}{set\_players\_room()}}
+{\footnotesize\ttfamily \label{_player_8h_a543920d64fa844b7481c399e0c0089be} 
+void set\+\_\+players\+\_\+room (\begin{DoxyParamCaption}\item[{unsigned char}]{room\+ID}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+
+
+removes a specific item from the players inventory 
+
+\begin{DoxyAuthor}{Author}
+Jackson Glover @para\mbox{[}in\mbox{]} \doxylink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER} 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \doxylink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}} & the item which will be removed from inventory updates the players info in heap to use the new room set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Jackson Glover 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em unsigned} & char room\+ID \\
+\hline
+\mbox{\texttt{ in}}  & {\em \doxylink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}} & player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_player_8h_aace5e550d1ef638021b5a507be916670}\index{Player.h@{Player.h}!use\_item@{use\_item}}
+\index{use\_item@{use\_item}!Player.h@{Player.h}}
+\doxysubsubsection{\texorpdfstring{use\_item()}{use\_item()}}
+{\footnotesize\ttfamily \label{_player_8h_aace5e550d1ef638021b5a507be916670} 
+char \texorpdfstring{$\ast$}{*} use\+\_\+item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_a20ec260109c4201081a69c9341a8ad7b}{PITEM}}}]{item}{, }\item[{\mbox{\hyperlink{_player_8h_aa679c86b77a142a03d861ae90bd07714}{PPLAYER}}}]{player}{}\end{DoxyParamCaption})}
+
+Uses an item from inventory and removes it after use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to use. \\
+\hline
+{\em player} & The player using the item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+in theorry you could pick up items which have been returned to their spawn this can be prevented by adding a "{}used"{} bool to the item 
+\end{DoxyWarning}
